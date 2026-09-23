@@ -5555,6 +5555,7 @@ def parse_params(handler, body):
 
 def rkey(path,p): return path+'|'+(urllib.parse.urlencode(sorted(p.items())) if p else '')
 def out(h,obj,status=200):
+    obj = rewrite_public_image_urls(obj)
     b=json.dumps(obj,ensure_ascii=False).encode(); h.send_response(status); h.send_header('Content-Type','application/json; charset=utf-8'); h.send_header('Access-Control-Allow-Origin','*'); h.send_header('Cache-Control','no-store'); h.send_header('Content-Length',str(len(b))); h.end_headers(); h.wfile.write(b)
 TURBO_STATE_FILE = os.path.join(ROOT, 'turbo_state.json')
 
