@@ -4703,13 +4703,16 @@ def rewrite_public_image_urls(obj):
         # Fix captured card cabinet image paths.
         # Cabinet 23 uses /uploads/images/card/23/...,
         # not /uploads/images/goods/23/...
-        s = s.replace(
-            '/local-img/uploads/images/goods/23/',
-            '/local-img/uploads/images/card/23/'
-        ).replace(
-            '/uploads/images/goods/23/',
-            '/uploads/images/card/23/'
-        )
+        # Cabinet 23: normal goods*.webp cards live under /card/23/.
+        # content_goods*.webp stays under /goods/23/.
+        if 'content_goods' not in s:
+            s = s.replace(
+                '/local-img/uploads/images/goods/23/',
+                '/local-img/uploads/images/card/23/'
+            ).replace(
+                '/uploads/images/goods/23/',
+                '/uploads/images/card/23/'
+            )
 
         prefixes = (
             'https://img.joypop.gg/',
