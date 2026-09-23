@@ -4683,6 +4683,40 @@ PUBLIC_BASE_URL = os.environ.get(
     'http://localhost:8080'
 ).rstrip('/')
 
+
+def rewrite_public_image_urls(obj):
+    if isinstance(obj, dict):
+        return {
+            k: rewrite_public_image_urls(v)
+            for k, v in obj.items()
+        }
+
+    if isinstance(obj, list):
+        return [
+            rewrite_public_image_urls(v)
+            for v in obj
+        ]
+
+    if isinstance(obj, str):
+        s = obj.strip()
+
+        prefixes = (
+            'https://img.joypop.gg/',
+            'http://img.joypop.gg/',
+            'https://joypop.oss-accelerate.aliyuncs.com/',
+            'http://joypop.oss-accelerate.aliyuncs.com/',
+        )
+
+        for prefix in prefixes:
+            if s.startswith(prefix):
+                path = urllib.parse.urlparse(s).path.lstrip('/')
+                return PUBLIC_BASE_URL + '/local-img/' + path
+
+        return obj
+
+    return obj
+
+
 def infinite_local_url(value):
     """Normalize JOYPOP image URLs to an absolute URL on this local server.
 
@@ -10905,6 +10939,7 @@ class H(SimpleHTTPRequestHandler):
 
         if obj is not None:
             print('[HAR REPLAY]', k)
+            obj = rewrite_public_image_urls(obj)
             return out(self, obj)
 
         print('[MISSING LOCAL API]', path, p)
