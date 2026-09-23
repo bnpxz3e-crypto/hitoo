@@ -4678,6 +4678,11 @@ def apply_level_background(x):
 # V5.15 - INFINITE PRESENTATION
 # ============================================================
 
+PUBLIC_BASE_URL = os.environ.get(
+    'PUBLIC_BASE_URL',
+    'http://localhost:8080'
+).rstrip('/')
+
 def infinite_local_url(value):
     """Normalize JOYPOP image URLs to an absolute URL on this local server.
 
@@ -4700,19 +4705,19 @@ def infinite_local_url(value):
     if '/local-img/' in clean_path:
         rel=clean_path.split('/local-img/',1)[1].lstrip('/')
         port=str(globals().get('PORT', os.environ.get('PORT','8080')))
-        return '/local-img/' + rel
+        return PUBLIC_BASE_URL + '/local-img/' + rel
 
     for prefix in ('https://img.joypop.gg/','http://img.joypop.gg/'):
         if value.startswith(prefix):
             rel=urllib.parse.urlparse(value).path.lstrip('/')
             port=str(globals().get('PORT', os.environ.get('PORT','8080')))
-            return '/local-img/' + rel
+            return PUBLIC_BASE_URL + '/local-img/' + rel
 
     local_prefixes=('uploads/','upload/','static/','newimage/','images/','webSite/','badge/','card/')
     rel=clean_path.lstrip('/')
     if rel.startswith(local_prefixes):
         port=str(globals().get('PORT', os.environ.get('PORT','8080')))
-        return '/local-img/' + rel
+        return PUBLIC_BASE_URL + '/local-img/' + rel
 
     return value
 
