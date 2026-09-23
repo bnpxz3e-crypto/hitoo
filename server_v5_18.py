@@ -10534,14 +10534,14 @@ class H(SimpleHTTPRequestHandler):
         d=json.loads(json.dumps(d)); data=d.get('data',{})
         for k in ('imgurl','content_image','goodslist_imgurl'):
           if data.get(k):
-            v=str(data[k]).replace('https://img.joypop.gg/','/local-img/').replace('http://img.joypop.gg/','/local-img/')
-            if not v.startswith(('http://','https://','/')): v='/local-img/'+v.lstrip('/')
+            v=str(data[k]).replace('https://img.joypop.gg/', PUBLIC_BASE_URL + '/local-img/').replace('http://img.joypop.gg/', PUBLIC_BASE_URL + '/local-img/')
+            if not v.startswith(('http://','https://','/')): v=PUBLIC_BASE_URL + '/local-img/' + v.lstrip('/')
             data[k]=v
         return out(self,d)
       for gid,pool in CARD_POOLS.items():
         for z in pool:
           if str(z.get('id') or z.get('goodslist_id') or z.get('goods_list_id') or '')==cid:
-            img=str(z.get('goodslist_imgurl') or z.get('imgurl') or '').replace('https://img.joypop.gg/','/local-img/')
+            img=str(z.get('goodslist_imgurl') or z.get('imgurl') or '').replace('https://img.joypop.gg/', PUBLIC_BASE_URL + '/local-img/')
             return out(self,{'status':1,'msg':'ดำเนินการสำเร็จ','data':{'id':z.get('id'),'goods_id':int(gid),'goods_list_id':z.get('goods_list_id') or z.get('real_goods_list_id'),'title':z.get('goodslist_title') or z.get('title') or z.get('short_title'),'short_title':z.get('short_title'),'imgurl':img,'content_image':img,'price':z.get('goodslist_price') or z.get('price'),'show_price':z.get('goodslist_price') or z.get('price'),'real_pro':z.get('real_pro'),'shang_id':z.get('shang_id')}})
       return out(self,{'status':0,'msg':f'No captured card detail for id {cid}','data':None})
     if path=='/api/card/detail':
