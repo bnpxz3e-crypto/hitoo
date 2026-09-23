@@ -3,9 +3,9 @@
     {
       "id": 609,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods1.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods1.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 609,
       "goods_list_id": 609,
       "real_goods_list_id": 609,
@@ -15,14 +15,14 @@
       "price": "1200.0000",
       "goodslist_price": "1200.0000",
       "real_pro": "0.01000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods1.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods1.webp"
     },
     {
       "id": 610,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods2.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods2.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 610,
       "goods_list_id": 610,
       "real_goods_list_id": 610,
@@ -32,14 +32,14 @@
       "price": "800.0000",
       "goodslist_price": "800.0000",
       "real_pro": "0.02000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods2.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods2.webp"
     },
     {
       "id": 611,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods3.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods3.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 611,
       "goods_list_id": 611,
       "real_goods_list_id": 611,
@@ -49,14 +49,14 @@
       "price": "600.0000",
       "goodslist_price": "600.0000",
       "real_pro": "0.07000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods3.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods3.webp"
     },
     {
       "id": 612,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods4.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods4.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 612,
       "goods_list_id": 612,
       "real_goods_list_id": 612,
@@ -66,14 +66,14 @@
       "price": "500.0000",
       "goodslist_price": "500.0000",
       "real_pro": "0.10000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods4.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods4.webp"
     },
     {
       "id": 613,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods5.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods5.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 613,
       "goods_list_id": 613,
       "real_goods_list_id": 613,
@@ -83,14 +83,14 @@
       "price": "400.0000",
       "goodslist_price": "400.0000",
       "real_pro": "0.10000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods5.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods5.webp"
     },
     {
       "id": 614,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods6.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods6.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 614,
       "goods_list_id": 614,
       "real_goods_list_id": 614,
@@ -100,14 +100,14 @@
       "price": "300.0000",
       "goodslist_price": "300.0000",
       "real_pro": "0.15000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods6.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods6.webp"
     },
     {
       "id": 615,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods7.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods7.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 615,
       "goods_list_id": 615,
       "real_goods_list_id": 615,
@@ -117,14 +117,14 @@
       "price": "300.0000",
       "goodslist_price": "300.0000",
       "real_pro": "0.15000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods7.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods7.webp"
     },
     {
       "id": 616,
       "shang_id": 100,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods8.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods8.webp",
       "shang_title": "SP",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+      "shang_iamge": "/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
       "goodslist_id": 616,
       "goods_list_id": 616,
       "real_goods_list_id": 616,
@@ -134,14 +134,14 @@
       "price": "250.0000",
       "goodslist_price": "250.0000",
       "real_pro": "0.40000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods8.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods8.webp"
     },
     {
       "id": 617,
       "shang_id": 101,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods9.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods9.webp",
       "shang_title": "A",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
+      "shang_iamge": "/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
       "goodslist_id": 617,
       "goods_list_id": 617,
       "real_goods_list_id": 617,
@@ -151,14 +151,14 @@
       "price": "200.0000",
       "goodslist_price": "200.0000",
       "real_pro": "0.45000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods9.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods9.webp"
     },
     {
       "id": 618,
       "shang_id": 101,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods10.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods10.webp",
       "shang_title": "A",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
+      "shang_iamge": "/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
       "goodslist_id": 618,
       "goods_list_id": 618,
       "real_goods_list_id": 618,
@@ -168,14 +168,14 @@
       "price": "180.0000",
       "goodslist_price": "180.0000",
       "real_pro": "0.50000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods10.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods10.webp"
     },
     {
       "id": 619,
       "shang_id": 101,
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods11.webp",
+      "imgurl": "/local-img/uploads/images/card/18/goods11.webp",
       "shang_title": "A",
-      "shang_iamge": "http://localhost:8080/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
+      "shang_iamge": "/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
       "goodslist_id": 619,
       "goods_list_id": 619,
       "real_goods_list_id": 619,
@@ -185,7 +185,7 @@
       "price": "100.0000",
       "goodslist_price": "100.0000",
       "real_pro": "0.60000000",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods11.webp"
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods11.webp"
     },
     {
       "id": 620,
@@ -200,8 +200,8 @@
       "price": "40.0000",
       "goodslist_price": "40.0000",
       "real_pro": "1.20000000",
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods12.webp",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods12.webp"
+      "imgurl": "/local-img/uploads/images/card/18/goods12.webp",
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods12.webp"
     },
     {
       "id": 621,
@@ -216,8 +216,8 @@
       "price": "30.0000",
       "goodslist_price": "30.0000",
       "real_pro": "1.80000000",
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods13.webp",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods13.webp"
+      "imgurl": "/local-img/uploads/images/card/18/goods13.webp",
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods13.webp"
     },
     {
       "id": 622,
@@ -232,8 +232,8 @@
       "price": "10.0000",
       "goodslist_price": "10.0000",
       "real_pro": "12.00000000",
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods14.webp",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods14.webp"
+      "imgurl": "/local-img/uploads/images/card/18/goods14.webp",
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods14.webp"
     },
     {
       "id": 623,
@@ -248,8 +248,8 @@
       "price": "1.0000",
       "goodslist_price": "1.0000",
       "real_pro": "25.50000000",
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods15.webp",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods15.webp"
+      "imgurl": "/local-img/uploads/images/card/18/goods15.webp",
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods15.webp"
     },
     {
       "id": 624,
@@ -264,8 +264,8 @@
       "price": "1.0000",
       "goodslist_price": "1.0000",
       "real_pro": "25.70000000",
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods16.webp",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods16.webp"
+      "imgurl": "/local-img/uploads/images/card/18/goods16.webp",
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods16.webp"
     },
     {
       "id": 625,
@@ -280,8 +280,8 @@
       "price": "1.0000",
       "goodslist_price": "1.0000",
       "real_pro": "31.25000000",
-      "imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods17.webp",
-      "goodslist_imgurl": "http://localhost:8080/local-img/uploads/images/card/18/goods17.webp"
+      "imgurl": "/local-img/uploads/images/card/18/goods17.webp",
+      "goodslist_imgurl": "/local-img/uploads/images/card/18/goods17.webp"
     }
   ],
   "19": [

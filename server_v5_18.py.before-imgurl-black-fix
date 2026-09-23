@@ -1187,10 +1187,10 @@ LEVEL_WEIGHTS={"SP":2,"A":8,"B":20,"C":70} # LOCAL DEMO ONLY
 # shang_image = small SP/A/B/C badge.
 # B and C use the same blue/ice card background, matching the captured UI.
 LEVEL_BADGES={
-    "SP":"http://localhost:8080/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
-    "A":"http://localhost:8080/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
-    "B":"http://localhost:8080/local-img/upload/20260817/6b140c0b707528013e3d079e637740e5ee0f1b6b.webp",
-    "C":"http://localhost:8080/local-img/upload/20260817/f86d7dd169a497e17dc330c44627f98071761775.webp",
+    "SP":"/local-img/upload/20260817/91bfc32d5b257d01216aef3bbc4cff13de6f3f6d.webp",
+    "A":"/local-img/upload/20260817/42b480e3af1884bd2ddc3c5c1789a4d0b86992c6.webp",
+    "B":"/local-img/upload/20260817/6b140c0b707528013e3d079e637740e5ee0f1b6b.webp",
+    "C":"/local-img/upload/20260817/f86d7dd169a497e17dc330c44627f98071761775.webp",
 }
 BC_BACKGROUND="/h5/assets/local-tier-bc-ice.png"
 
@@ -3096,7 +3096,7 @@ def card_album_response(p):
           v=x.get(k)
           if isinstance(v,str) and 'img.joypop.gg/' in v:
               rel=v.split('img.joypop.gg/',1)[1]
-              x[k]='http://localhost:8080/local-img/'+rel
+              x[k]='/local-img/'+rel
 
     shang=int(p.get('shang_id') or 0)
     typ=int(p.get('type') or 0)
@@ -3473,13 +3473,13 @@ def card_order(gid,n):
       # Card result images must be served by the local mirror, never the live image host.
       img=str(img).replace(
         'https://img.joypop.gg/',
-        'http://localhost:8080/local-img/'
+        '/local-img/'
       ).replace(
         'http://img.joypop.gg/',
-        'http://localhost:8080/local-img/'
+        '/local-img/'
       )
       if img.startswith('/local-img/'):
-        img='http://localhost:8080'+img
+        img=''+img
       title=src.get('goodslist_title') or src.get('title') or src.get('short_title') or f"{detail.get('title','Card')} - {lvl}"
       short=src.get('short_title') or title
       raw_price=src.get('goodslist_price') or src.get('price') or src.get('goodslist_money') or '0.00'
@@ -3875,14 +3875,14 @@ class H(SimpleHTTPRequestHandler):
         d=json.loads(json.dumps(d)); data=d.get('data',{})
         for k in ('imgurl','content_image','goodslist_imgurl'):
           if data.get(k):
-            v=str(data[k]).replace('https://img.joypop.gg/','http://localhost:8080/local-img/').replace('http://img.joypop.gg/','http://localhost:8080/local-img/')
-            if not v.startswith(('http://','https://','/')): v='http://localhost:8080/local-img/'+v.lstrip('/')
+            v=str(data[k]).replace('https://img.joypop.gg/','/local-img/').replace('http://img.joypop.gg/','/local-img/')
+            if not v.startswith(('http://','https://','/')): v='/local-img/'+v.lstrip('/')
             data[k]=v
         return out(self,d)
       for gid,pool in CARD_POOLS.items():
         for z in pool:
           if str(z.get('id') or z.get('goodslist_id') or z.get('goods_list_id') or '')==cid:
-            img=str(z.get('goodslist_imgurl') or z.get('imgurl') or '').replace('https://img.joypop.gg/','http://localhost:8080/local-img/')
+            img=str(z.get('goodslist_imgurl') or z.get('imgurl') or '').replace('https://img.joypop.gg/','/local-img/')
             return out(self,{'status':1,'msg':'ดำเนินการสำเร็จ','data':{'id':z.get('id'),'goods_id':int(gid),'goods_list_id':z.get('goods_list_id') or z.get('real_goods_list_id'),'title':z.get('goodslist_title') or z.get('title') or z.get('short_title'),'short_title':z.get('short_title'),'imgurl':img,'content_image':img,'price':z.get('goodslist_price') or z.get('price'),'show_price':z.get('goodslist_price') or z.get('price'),'real_pro':z.get('real_pro'),'shang_id':z.get('shang_id')}})
       return out(self,{'status':0,'msg':f'No captured card detail for id {cid}','data':None})
     if path=='/api/card/detail':
