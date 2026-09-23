@@ -4700,6 +4700,17 @@ def rewrite_public_image_urls(obj):
     if isinstance(obj, str):
         s = obj.strip()
 
+        # Fix captured card cabinet image paths.
+        # Cabinet 23 uses /uploads/images/card/23/...,
+        # not /uploads/images/goods/23/...
+        s = s.replace(
+            '/local-img/uploads/images/goods/23/',
+            '/local-img/uploads/images/card/23/'
+        ).replace(
+            '/uploads/images/goods/23/',
+            '/uploads/images/card/23/'
+        )
+
         prefixes = (
             'https://img.joypop.gg/',
             'http://img.joypop.gg/',
