@@ -4700,19 +4700,19 @@ def infinite_local_url(value):
     if '/local-img/' in clean_path:
         rel=clean_path.split('/local-img/',1)[1].lstrip('/')
         port=str(globals().get('PORT', os.environ.get('PORT','8080')))
-        return f'http://localhost:{port}/local-img/' + rel
+        return '/local-img/' + rel
 
     for prefix in ('https://img.joypop.gg/','http://img.joypop.gg/'):
         if value.startswith(prefix):
             rel=urllib.parse.urlparse(value).path.lstrip('/')
             port=str(globals().get('PORT', os.environ.get('PORT','8080')))
-            return f'http://localhost:{port}/local-img/' + rel
+            return '/local-img/' + rel
 
     local_prefixes=('uploads/','upload/','static/','newimage/','images/','webSite/','badge/','card/')
     rel=clean_path.lstrip('/')
     if rel.startswith(local_prefixes):
         port=str(globals().get('PORT', os.environ.get('PORT','8080')))
-        return f'http://localhost:{port}/local-img/' + rel
+        return '/local-img/' + rel
 
     return value
 
