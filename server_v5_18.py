@@ -4723,7 +4723,7 @@ def rewrite_public_image_urls(obj):
                 path = urllib.parse.urlparse(s).path.lstrip('/')
                 return PUBLIC_BASE_URL + '/local-img/' + path
 
-        return obj
+        return s
 
     return obj
 
