@@ -1515,7 +1515,7 @@ def infinite_local_url(value):
 
     Absolute localhost is intentional: the captured frontend may resolve root-relative
     image paths against https://img.joypop.gg, which produced URLs such as
-    https://img.joypop.gg/local-img/... .
+    /local-img/... .
     """
     if not value:
         return ''
@@ -1528,7 +1528,7 @@ def infinite_local_url(value):
     clean_path=parsed.path or value
 
     # IMPORTANT: handle an already rewritten /local-img/ path first, including
-    # malformed captured URLs such as https://img.joypop.gg/local-img/uploads/...
+    # malformed captured URLs such as /local-img/uploads/...
     if '/local-img/' in clean_path:
         rel=clean_path.split('/local-img/',1)[1].lstrip('/')
         port=str(globals().get('PORT', os.environ.get('PORT','8080')))
