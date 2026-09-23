@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="JOYPOP" />
+
+  <!--
+    Vue、业务脚本和接口开始执行前的首帧占位。
+    这里必须使用内联样式，否则外部 CSS 尚未下载时会先露出 html 的黑色背景；
+    Vue 挂载 #app 后会自动移除该节点，并由公共 LoadIng 组件无缝接管。
+  -->
+  <style>
+    html,
+    body,
+    #app {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    #app-bootstrap-loading {
+      position: fixed;
+      inset: 0;
+      z-index: 2147483647;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    #app-bootstrap-loading img {
+      display: block;
+      width: 26.6667vw;
+      height: 26.6667vw;
+      -o-object-fit: contain;
+         object-fit: contain;
+    }
+
+    @media (min-width: 501px) {
+      #app-bootstrap-loading img {
+        width: 75.7333px;
+        height: 75.7333px;
+      }
+    }
+
+    @media (min-width: 500px) and (min-height: 0px) {
+
+      html,
+    body,
+    #app {
+            margin: 0;
+      }
+
+      #app-bootstrap-loading {
+            inset: 0;
+            z-index: 2147483647;
+      }
+
+      #app-bootstrap-loading img {
+            width: 75.733px;
+            height: 75.733px;
+      }
+}
+  </style>
+
+  <link rel="dns-prefetch" href="https://api.joypop.gg/">
+  <link rel="preconnect" href="https://api.joypop.gg/" crossorigin="">
+  <link rel="dns-prefetch" href="https://img.joypop.gg/">
+  <link rel="preconnect" href="https://img.joypop.gg/" crossorigin="">
+
+  <meta property="og:type" content="website">
+	<meta property="og:title" content="JOYPOP Official Online Store">
+	<meta property="og:description" content="Discover thousands of authentic blind boxes, collectible cards, anime figures, and exclusive rewards. Join JOYPOP today.">
+  <meta property="og:site_name" content="JOYPOP" />
+	<meta property="og:image" content="https://img.joypop.gg/share-th.png?x-oss-process=image/resize,w_1200/format,webp">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:url" content="https://joypop.gg/h5">
+
+  <meta name="facebook-domain-verification" content="z22xcuccbshjgx766ncvtivfih0ds2" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/pwa-192.png" />
+  <script type="96afd7164a7421fa0e1b699a-text/javascript">
+    window.addEventListener('beforeinstallprompt', function (event) {
+      event.preventDefault();
+      window.__pwaDeferredPrompt = event;
+    });
+  </script>
+  <title>
+    JOYPOP
+  </title>
+  <link rel="icon" href="/h5/assets/logo.CimE0wOx.webp" />
+  <script type="96afd7164a7421fa0e1b699a-text/javascript">
+    // !function (f, b, e, v, n, t, s) {
+    //   if (f.fbq) return; n = f.fbq = function () {
+    //     n.callMethod ?
+    //       n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    //   };
+    //   if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+    //   n.queue = []; t = b.createElement(e); t.async = !0;
+    //   t.src = v; s = b.getElementsByTagName(e)[0];
+    //   s.parentNode.insertBefore(t, s)
+    // }(window, document, 'script',
+    //   'https://connect.facebook.net/en_US/fbevents.js');
+    // fbq('init', '1278036901064850');
+    // fbq('track', 'PageView');
+  </script>
+  <!-- TikTok Pixel Code Start -->
+  <script type="96afd7164a7421fa0e1b699a-text/javascript">
+    // !function (w, d, t) {
+    //   w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) {
+    //     for (
+    //       var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e
+    //   }, ttq.load = function (e, n) {
+    //     var r = "https://analytics.tiktok.com/i18n/pixel/events.js", o = n && n.partner; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = r, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; n = document.createElement("script")
+    //       ; n.type = "text/javascript", n.async = !0, n.src = r + "?sdkid=" + e + "&lib=" + t; e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(n, e)
+    //   };
+    //   ttq.load('D6H9NNBC77UAVBGSEO70');
+    //   ttq.page();
+    // }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+  <script type="96afd7164a7421fa0e1b699a-module" crossorigin src="/h5/assets/index.BAR33Wf_.js"></script>
+  <link rel="modulepreload" crossorigin href="/h5/assets/vendor.3MRCYvVo.js">
+  <link rel="modulepreload" crossorigin href="/h5/assets/vue-vendor.C7q8trD7.js">
+  <link rel="modulepreload" crossorigin href="/h5/assets/vant-vendor.Z2C0BEbc.js">
+  <link rel="stylesheet" crossorigin href="/h5/assets/vendor.eURlxoQr.css">
+  <link rel="stylesheet" crossorigin href="/h5/assets/vant-vendor.DfZzH5Rg.css">
+  <link rel="stylesheet" crossorigin href="/h5/assets/index.GrkQRp2m.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="app-bootstrap-loading" role="status" aria-label="Loading">
+      <img src="/h5/assets/loading.UmwIMoho.png" alt="" />
+    </div>
+  </div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="96afd7164a7421fa0e1b699a-|49" defer></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"81494a30cefd48449fbcba275a8505fa","spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>

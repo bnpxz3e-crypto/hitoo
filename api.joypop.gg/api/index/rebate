@@ -1,0 +1,1 @@
+{"status":1,"msg":"Request successful","data":{"can_receive":true,"total_rebate":"415.38","receive_count":2,"remainSeconds":0,"has_yesterday_consume":false,"loss_rebate_num":21,"time_node":{"now":1789447256,"now_format":"2026-09-15 11:40:56","today_12_format":"2026-09-15 12:00:00","yesterday_12_format":"2026-09-14 12:00:00","tomorrow_12_format":"2026-09-16 12:00:00"}}}

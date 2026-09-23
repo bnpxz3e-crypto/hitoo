@@ -1,0 +1,26 @@
+{
+  "90": {
+    "cabinet_id": "90",
+    "owner_user_id": 999999,
+    "owner_name": "Local User",
+    "owner_avatar": "",
+    "started_at": 1790104553,
+    "expires_at": 1790190953,
+    "pending_points": 746.2,
+    "multiplier": 2.0,
+    "points_per_money": 10.0,
+    "last_score_at": 1790105730
+  },
+  "95": {
+    "cabinet_id": "95",
+    "owner_user_id": 999999,
+    "owner_name": "Local User",
+    "owner_avatar": "",
+    "started_at": 1790157894,
+    "expires_at": 1790244294,
+    "pending_points": 45284.4,
+    "multiplier": 2.0,
+    "points_per_money": 10.0,
+    "last_score_at": 1790158258
+  }
+}
